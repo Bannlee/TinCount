@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TinCount.SignupPage"
+             Title="SignupPage">
+    <Grid RowDefinitions="100, Auto, Auto, Auto, *"
+      ColumnDefinitions=".75*, .25*"
+      BackgroundColor="#85474b">
+
+        <Grid Grid.Row="0"
+          Grid.ColumnSpan="2">
+            <Image Source="tindacount\_logo.png"
+               BackgroundColor="#85474b"
+               VerticalOptions="Center"
+               HorizontalOptions="Center" />
+        </Grid>
+
+        <Label Text="Count on IT for your business' success"
+           FontSize="14"
+           TextColor="White"
+           HorizontalTextAlignment="Center"
+           VerticalTextAlignment="Center"
+           Grid.Row="1"
+           Grid.ColumnSpan="2"
+           Margin="20" />
+
+        <Grid Grid.Row="2"
+          Grid.ColumnSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Entry x:Name="usernameEntry"
+               Placeholder="Username"
+               FontSize="14"
+               TextColor="White"
+               Margin="20"
+               Grid.Row="0" />
+
+            <Entry x:Name="passwordEntry"
+               Placeholder="Password"
+               FontSize="14"
+               TextColor="White"
+               IsPassword="True"
+               Margin="20"
+               Grid.Row="1" />
+        </Grid>
+
+        <Grid Grid.Row="3"
+          Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <Button Text="Forgot Password?"
+                BackgroundColor="Transparent"
+                TextColor="White"
+                VerticalOptions="Center"
+                Margin="0, 20, 0, 0"
+                Grid.Column="1" />
+        </Grid>
+
+        <Grid Grid.Row="4"
+          Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <StackLayout Grid.Column="0"
+                     VerticalOptions="End"
+                     Spacing="10"
+                     Margin="20">
+
+                <Button Text="Login"
+                    BackgroundColor="Black"
+                    TextColor="White"
+                    CornerRadius="5"
+                    Padding="10, 5"
+                    FontSize="16"
+                    HeightRequest="40"
+                    HorizontalOptions="FillAndExpand" />
+
+            </StackLayout>
+
+            <StackLayout Grid.Column="1"
+                     VerticalOptions="End"
+                     Spacing="10"
+                     Margin="20">
+
+                <Button Text="Sign Up"
+                    BackgroundColor="Transparent"
+                    TextColor="White"
+                    CornerRadius="5"
+                    Padding="10, 5"
+                    FontSize="16"
+                    HeightRequest="40"
+                    HorizontalOptions="FillAndExpand" />
+
+            </StackLayout>
+
+        </Grid>
+
+    </Grid>
+</ContentPage>
